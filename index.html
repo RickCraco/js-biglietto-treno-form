@@ -9,26 +9,61 @@
         <title>Document</title>
     </head>
 
-    <body class="container">
+    <body>
         
-        <div class="row mt-4">
+        <div class="border container mt-5 p-4">
+            <div class="row mt-4">
 
-            <div class="col-auto">
-                <select name="age" id="age" class="">
-                    <option value="minorenne">minorenne</option>
-                    <option value="maggiorenne">maggiorenne</option>
-                    <option value="over65">over 65</option>
-                </select>
+                <input type="text" class="form-control col mx-2" id="nome" value="">
+                <input type="text" class="form-control col mx-2" id="km" value="">
+
+                <div class="col-auto">
+                    <select name="age" id="age" class="form-control">
+                        <option value="minorenne">minorenne</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="over65">over 65</option>
+                    </select>
+                </div>
+
             </div>
 
-            <input type="text" class="form-control col-auto mx-2" id="nome" value="">
-            <input type="text" class="form-control col-auto mx-2" id="km" value="">
-            
+        
+
+            <button class="btn btn-danger mt-4 mx-2" id="generate">Genera</button>
+            <button class="btn btn-danger mt-4 mx-2" id="reset">Resetta</button>
 
         </div>
 
-        <button class="btn btn-danger" id="generate">Genera</button>
-        <button class="btn btn-danger" id="reset">Resetta</button>
+        <div class="border container mt-5 p-4 d-none" id="ticket">
+            <div class="row">
+                <div class="col-auto bg-danger p-3">
+                    <h3>Nome passeggero</h2>
+                    <div class="nome-pass"></div>
+                </div>
+
+                <div class="col-9 border">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice CP</th>
+                            <th scope="col">Costo biglietto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="offerta"></td>
+                            <td class="carrozza"></td>
+                            <td class="cp"></td>
+                            <td class="costo"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+            </div>
+        </div>
 
         <script src="js/script.js"></script>
     </body>
