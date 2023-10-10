@@ -1,4 +1,5 @@
 const generateBtn = document.getElementById('generate');
+const resetBtn = document.getElementById('reset')
 let nome;
 let km;
 let age;
