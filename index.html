@@ -14,10 +14,18 @@
         <div class="border container mt-5 p-4">
             <div class="row mt-4">
 
-                <input type="text" class="form-control col mx-2" id="nome" value="">
-                <input type="text" class="form-control col mx-2" id="km" value="">
+                <div class="col-5">
+                    <label for="name">Inserire nome e cognome</label>
+                    <input type="text" class="form-control" id="nome" value="">
+                </div>
 
-                <div class="col-auto">
+                <div class="col-5">
+                    <label for="km">Inserire i km</label>
+                    <input type="text" class="form-control" id="km" value="">
+                </div>
+                
+                <div class="col-2">
+                    <label for="age">Inserire fascia di eta'</label>
                     <select name="age" id="age" class="form-control">
                         <option value="minorenne">minorenne</option>
                         <option value="maggiorenne">maggiorenne</option>
