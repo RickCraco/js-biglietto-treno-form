@@ -58,7 +58,7 @@ resetBtn.addEventListener('click',
         document.getElementById('nome').value = '';
         document.getElementById('km').value = '';
         document.getElementById('age').value = 'minorenne';
-        ticket.classList.add('d-none')
+        ticket.classList.add('d-none');
     }
 
 )
