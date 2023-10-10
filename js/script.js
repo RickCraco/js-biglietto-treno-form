@@ -13,12 +13,6 @@ generateBtn.addEventListener('click',
         km = parseInt(document.getElementById('km').value);
         age = document.getElementById('age').value;
 
-        //if(isNaN(km)){
-        //    alert('inserire valori validi')
-        //}else if(nome === '' || nome === isNaN(nome)){
-            //alert('inserire valori validi')
-        //}
-
         if(nome === '' || !isNaN(parseInt(nome))){
             alert('inserire valori validi');
             
